@@ -6,11 +6,13 @@
     */
 
     //Entrada
-
-
+    const celsius = Number(prompt(`Qual a temperatura, em graus Celsius?`))
+    let fahrenheit = 0
     //Processamento
-
-
+    function conversao() {
+        fahrenheit = (9*celsius+160)/5
+        return fahrenheit
+    }
     //Saída
-
+    alert(`Temperatura em celsius: ${celsius}°C \nTemperatura em graus fahrenheit: ${conversao()}°F`)
 </script>

@@ -5,11 +5,20 @@
     */
 
     //Entrada
-
-
+    let numero = Number(prompt("Insira um número inteiro:"));
+    let fatorado = numero;
     //Processamento
-
-
+    function fatorar(numero) {
+        if (numero == 1) {
+            return 1;
+        }
+         else {
+            numero = numero * fatorar(numero - 1); 
+            return numero
+        }
+    }
     //Saída
+    alert(`O número ${numero} fatorado é ${fatorar(numero)}`);
+
 
 </script>

@@ -7,11 +7,19 @@
     */
 
     //Entrada
-
-
+    let palavra = prompt(`Informe uma palavra`).toUpperCase()
+    let vogais = 0
     //Processamento
-
+    function contarVogais() {
+        for(index of palavra) {
+          if(index == "A" || index == "E" || index == "I" || index == "O" || index== "U"){
+            vogais = vogais +1;
+          }
+            
+        }
+        return vogais
+    }
 
     //Saída
-
+    alert(`Quantidade de vogais: ${contarVogais()}`)
 </script>

@@ -6,11 +6,14 @@
     */
 
     //Entrada
-
-
+    const base = Number(prompt(`Qual o tamanho da base do triângulo?`))
+    const altura = Number(prompt(`Qual o tamanho da altura do triângulo?`))
+    let area=0
     //Processamento
-
-
+    function calcularArea() {
+        area = (base*altura) / 2
+        return area
+    }
     //Saída
-
+    alert(`A área do triângulo é: ${calcularArea()}`)
 </script>

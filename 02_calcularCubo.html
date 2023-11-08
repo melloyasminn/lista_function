@@ -6,11 +6,13 @@
     */
 
     //Entrada
-
-
+    const numero = Number(prompt(`Informe um número inteiro`))
+    let cubo = 0
     //Processamento
-
-
+    function calculo(){
+        cubo = numero ** 3;
+        return cubo
+    }
     //Saída
-
+    alert(`O número ${numero} elevado ao cubo é ${calculo()}`)
 </script>

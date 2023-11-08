@@ -6,11 +6,21 @@
     */
 
     //Entrada
-
+    let palavra = prompt("Insira uma frase ou palavra:");
+    let letra = prompt("Qual letra você quer?");
+    let letras = 0;
 
     //Processamento
-
+    function acharLetra() {
+        for (let index of palavra) {
+            if (index == letra.toUpperCase() || index == letra.toLowerCase())
+            letras++;
+        }
+        return letras;
+    }
 
     //Saída
+    alert(`A letra "${letra}" aparece ${acharLetra()} vez(es), na frase/palavra "${palavra}"`);
+
 
 </script>
