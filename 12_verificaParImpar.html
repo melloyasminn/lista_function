@@ -5,11 +5,16 @@
     */
 
     //Entrada
-
-
+    let numero = Number(prompt("Informe um número:"))
     //Processamento
-
-
+    function parImpar(numero) {
+        if(numero%2==0){
+         return(`O número ${numero} é par`);
+        }
+        else{
+            return(`O número ${numero} é ímpar`);
+        }
+    }
     //Saída
-
+    alert(parImpar(numero))
 </script>
