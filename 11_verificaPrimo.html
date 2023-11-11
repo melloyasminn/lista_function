@@ -5,11 +5,23 @@
     */
 
     //Entrada
-
-
+    const numero = Number(prompt(`Informe um número`))
     //Processamento
+    function primo() {
+        let descobrir = 0;
 
+        for (let index = 1; index <= numero; index++) {
+            if (numero % index == 0) {
+                descobrir++;
+            }
+        }
+        if (descobrir <= 2) {
+            return `O número ${numero} é primo`;
+        } else {
+            return `O número ${numero} não é primo`;
+        }
+    }
 
     //Saída
-
+    alert(primo())
 </script>
